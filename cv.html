@@ -2,13 +2,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Side by Side Columns</title>
+    <title>Samuel Dumas - CV</title>
     <style>
         .container {
             display: flex;
         }
-        .column {
-            flex: 1; /* Equal width for each column */
+        .left-column {
+            flex: 0 0 35%; /* 35% width */
+            background-color: lightgray;
+            padding: 10px;
+        }
+        .right-column {
+            flex: 0 0 65%; /* 65% width */
+            background-color: lightblue;
             padding: 10px;
         }
 h1 {text-align: center;}
@@ -19,10 +25,10 @@ h1 {text-align: center;}
 	<h2>EDUCATION</h2>
 	<body>
     	<div class="container">
-        <div class="column">
+        <div class="left-column">
 		<p>2025 (Expected)</p>
         </div>
-        <div class="column">
+        <div class="right-column">
             	<p>Honours Bachelor of Science (Mathematics Major, Biology Minor, Science and Society Minor), University of Toronto</p>
         </div>
     	</div>
@@ -31,13 +37,13 @@ h1 {text-align: center;}
 	<h2>RESEARCH EXPERIENCE</h2>
 	<body>
     	<div class="container">
-        <div class="column">
-		<p>May 2024 - Present</p>
-		<p>May 2023 - Present</p>
-		<p>May 2023 - April 2024</p>
+        <div class="left-column">
+		<p>May 2024 - Present \n</p>
+		<p>May 2023 - Present \n </p>
+		<p>May 2023 - April 2024 \n \n</p>
 		<p>January 2023 - August 2023</p> 
         </div>
-        <div class="column">
+        <div class="right-column">
             	<p>Research Assistant, Department of Ecology and Evolutionary Biology, with Dr. Nicole Mideo</p>
 		<p>Research Assistant, Department of Mathematics, University of Toronto, with Dr. Camelia Karimianpour</p>
 		<p>Research Assistant, Department of Ecology and Evolutionary Biology, University of Toronto, with Dr. Donald Jackson</p>
