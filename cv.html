@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<title>
+		</title>
+		<style>
+			body { line-height:150%; font-family:'Times New Roman'; font-size:11pt }
+			h1, h2, h3, h4, h5, h6, p { margin:0pt 0pt 8pt }
+			li { margin-top:0pt; margin-bottom:8pt }
+			h1 { margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:150%; font-family:'Times New Roman'; font-size:16pt; font-weight:normal; color:#0f4761 }
+			h2 { margin-top:2pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:150%; font-family:'Times New Roman'; font-size:13pt; font-weight:bold; color:#000000 }
+			h3 { margin-top:8pt; margin-bottom:4pt; page-break-inside:avoid; page-break-after:avoid; line-height:150%; font-family:Aptos; font-size:14pt; font-weight:normal; color:#0f4761 }
+			h4 { margin-top:4pt; margin-bottom:2pt; page-break-inside:avoid; page-break-after:avoid; line-height:150%; font-family:Aptos; font-size:11pt; font-weight:normal; font-style:italic; color:#0f4761 }
+			h5 { margin-top:4pt; margin-bottom:2pt; page-break-inside:avoid; page-break-after:avoid; line-height:150%; font-family:Aptos; font-size:11pt; font-weight:normal; color:#0f4761 }
+			h6 { margin-top:2pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:150%; font-family:Aptos; font-size:11pt; font-weight:normal; font-style:italic; color:#595959 }
+			.Heading7 { margin-top:2pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:150%; font-family:Aptos; font-size:11pt; font-weight:normal; font-style:normal; color:#595959 }
+			.Heading8 { margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:150%; font-family:Aptos; font-size:11pt; font-weight:normal; font-style:italic; color:#272727 }
+			.Heading9 { margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:150%; font-family:Aptos; font-size:11pt; font-weight:normal; font-style:normal; color:#272727 }
+			.Footer { margin-bottom:0pt; line-height:normal; font-family:'Times New Roman'; font-size:11pt }
+			.Header { margin-bottom:0pt; line-height:normal; font-family:'Times New Roman'; font-size:11pt }
+			.IntenseQuote { margin:18pt 43.2pt; text-align:center; line-height:150%; border-top:0.75pt solid #0f4761; border-bottom:0.75pt solid #0f4761; padding-top:10pt; padding-bottom:10pt; font-family:'Times New Roman'; font-size:11pt; font-style:italic; color:#0f4761 }
+			.ListParagraph { margin-left:36pt; margin-bottom:8pt; line-height:150%; font-family:'Times New Roman'; font-size:11pt }
+			.NoSpacing { margin-bottom:0pt; line-height:normal; font-family:'Times New Roman'; font-size:11pt }
+			.NormalWeb { margin-top:5pt; margin-bottom:5pt; line-height:normal; font-family:'Times New Roman'; font-size:12pt }
+			.Quote { margin-top:8pt; margin-bottom:8pt; text-align:center; line-height:150%; font-family:'Times New Roman'; font-size:11pt; font-style:italic; color:#404040 }
+			.Subtitle { margin-bottom:8pt; line-height:150%; font-family:Aptos; font-size:14pt; letter-spacing:0.75pt; color:#595959 }
+			.Title { margin-bottom:0pt; text-align:center; line-height:normal; font-family:'Times New Roman'; font-size:28pt; font-weight:bold; letter-spacing:-0.5pt }
+			span.FooterChar { font-family:'Times New Roman' }
+			span.HeaderChar { font-family:'Times New Roman' }
+			span.Heading1Char { font-family:'Times New Roman'; font-size:16pt; color:#0f4761 }
+			span.Heading2Char { font-family:'Times New Roman'; font-size:13pt; font-weight:bold; color:#000000 }
+			span.Heading3Char { font-size:14pt; color:#0f4761 }
+			span.Heading4Char { font-style:italic; color:#0f4761 }
+			span.Heading5Char { color:#0f4761 }
+			span.Heading6Char { font-style:italic; color:#595959 }
+			span.Heading7Char { color:#595959 }
+			span.Heading8Char { font-style:italic; color:#272727 }
+			span.Heading9Char { color:#272727 }
+			span.Hyperlink { text-decoration:underline; color:#467886 }
+			span.IntenseEmphasis { font-style:italic; color:#0f4761 }
+			span.IntenseQuoteChar { font-family:'Times New Roman'; font-style:italic; color:#0f4761 }
+			span.IntenseReference { font-weight:bold; font-variant:small-caps; letter-spacing:0.25pt; color:#0f4761 }
+			span.QuoteChar { font-family:'Times New Roman'; font-style:italic; color:#404040 }
+			span.SubtitleChar { font-size:14pt; letter-spacing:0.75pt; color:#595959 }
+			span.TitleChar { font-family:'Times New Roman'; font-size:28pt; font-weight:bold; letter-spacing:-0.5pt }
+			span.UnresolvedMention { color:#605e5c; background-color:#e1dfdd }
+@media (max-width: 900px) { 
+img { 
+   max-width: 100%;
+   height: auto;
+}
+
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+}	
+
+
+		</style>
+	</head>
+	<body>
+		<div>
+			<p class="Title">
+				Samuel Dumas
+			</p>
+			<p style="text-align:center">
+				<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7e0d501a0b131f0d3e131f1712500b0a110c11100a11501d1f">[email&#160;protected]</a> / <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="52263a372037333e21333f36273f332112353f333b3e7c313d3f">[email&#160;protected]</a>
+			</p>
+			<h2>
+				EDUCATION
+			</h2>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<p class="NoSpacing">
+				2025 (Expected)
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Honours Bachelor of Science (Mathematics Major, Biology Minor, Science and Society Minor), University of Toronto
+			</p>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<h2>
+				RESEARCH EXPERIENCE
+			</h2>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<p class="NoSpacing">
+				May 2024–Present 
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				May 2023–Present
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				May 2023–Apr. 2024
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Jan. 2023–Aug. 2023
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Research Assistant, Department of Ecology and Evolutionary Biology, with Dr. Nicole Mideo
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Research Assistant, Department of Mathematics, University of Toronto, with Dr. Camelia Karimianpour
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Research Assistant, Department of Ecology and Evolutionary Biology, University of Toronto, with Dr. Donald Jackson
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Research Assistant, Department of Chemical Engineering and Applied Chemistry, University of Toronto, with Mauricio García Benítez 
+			</p>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<h2>
+				RESEARCH INTERESTS
+			</h2>
+			<p class="NoSpacing" style="text-align:justify">
+				My research interests concern the exploration of quantitative methods used within ecological studies. I intend to further derive mathematical applications to explain concepts in ecology using both fieldwork and simulation data. My current work focuses on malaria modeling in the context of pathogen ecology, primarily studying the impact of prey-predator dynamics on vector-borne diseases.
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<h2>
+				TEACHING EXPERIENCE
+			</h2>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<p class="NoSpacing">
+				Jan. 2023–Apr. 2023, and Jan. 2024–Present
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Jan. 2024–Present
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Sep. 2022–Dec. 2022, and&#xa0; Sep. 2023–Dec. 2023
+			</p>
+			<p class="NoSpacing">
+				Calculus II for Engineers Teaching Assistant (MAT187), Department of Mathematics, University of Toronto, with Dr. Camelia Karimianpour
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Linear Algebra I Teaching Assistant (MAT223), Department of Mathematics, University of Toronto, with Dr. Pam Sargent
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Linear Algebra for Engineers Teaching Assistant (MAT188), Department of Mathematics, University of Toronto, with Dr. Camelia Karimianpour
+			</p>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<h2>
+				&#xa0;
+			</h2>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<h2>
+				AWARDS
+			</h2>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<p class="NoSpacing">
+				May 2024
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Aug. 2023
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Natural Sciences and Engineering Research Council of Canada Undergraduate Student Research Award
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				National Indicium Research Conference 2023 Third Place, STEM Fellowship
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				May 2023
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				May 2023
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				May 2023
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Natural Sciences and Engineering Research Council of Canada Undergraduate Student Research Award
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				DeLury Teaching Assistant Award, Department of Mathematics, University of Toronto.
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				UTSG Indicium 2023 First Place, STEM Fellowship
+			</p>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<h2>
+				PROFESIONAL EXPERIENCE
+			</h2>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<p class="NoSpacing">
+				May 2023–Dec. 2023
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Sep. 2021–Apr. 2022
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Course Developer, Department of Mathematics, University of Toronto; with Dr. Camelia Karimianpour
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Vic One Mentor, Victoria College, University of Toronto
+			</p>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<h2>
+				PUBLICATIONS
+			</h2>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<p class="NoSpacing">
+				April 2024
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Dec. 2024
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Dumas S, McGregor G, Karimianpour C. Inclusive collaboration via class preparation. Canadian Engineering Education Association. 2024. [Conference Proceeding, ACEG 2024] 
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Dumas S, Choo C, Wang C, Ouyang C. Automatization of microbial cultures in deepwell plates for strain characterization. STEM Fellowship Journal. 2024;9(2). [To be published in December 2024]
+			</p>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<h2>
+				CONFERENCES AND TALKS
+			</h2>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<p class="NoSpacing">
+				April 2024
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Aug. 2023
+			</p>
+			<p class="NoSpacing">
+				Standard-based Grading in First Year Math Courses. A&amp;S Teaching and Learning. 
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Automatization of microbial cultures in deepwell plates for strain characterization. National Indicium Research Conference 2023.
+			</p>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<h2>
+				ACADEMIC SUPERVISORS
+			</h2>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<p class="NoSpacing">
+				May 2024–Present
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Sep. 2022–Present
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Jan. 2024–Apr. 2024
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				May 2023–Apr. 2024
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Jan. 2023–Aug. 2023
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Dr. Nicole Mideo, Department of Ecology and Evolutionary Biology, University of Toronto. 
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Dr. Camelia Karimianpour, Department of Mathematics, University of Toronto
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Dr. Donald Jackson, Department of Ecology and Evolutionary Biology, University of Toronto
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Dr. Pamela Sargent, Department of Mathematics, University of Toronto
+			</p>
+			<p class="NoSpacing">
+				&#xa0;
+			</p>
+			<p class="NoSpacing">
+				Mauricio García Benítez, Department of Chemical Engineering and Applied Chemistry, University of Toronto
+			</p>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<h2>
+				FEATURES
+			</h2>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<p>
+				Mar. 2024
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p>
+				Scientists @ Vic: Samuel Dumas by Kieran Guimond. The Strand. Available here [https://thestrand.ca/scientists-vic-samuel-dumas/]. 
+			</p>
+		</div>
+		<br style="clear:both; mso-break-type:section-break" />
+		<div>
+			<p>
+				&#xa0;
+			</p>
+		</div>
+	<p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0">Converted to HTML with WordToHTML.net</a></p>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
